@@ -1,0 +1,121 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400&family=Rufina:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="all">
+    <div class="header">
+      <div class="header_left">
+        <p class="bigtitle">Portfolio</p>
+        <a href="index.html" class="pagename">About me</a>
+        <a href="UiUxDesign.html" class="pagename pagename2">UI/UX Design</a>
+        <a href="GraphicDesign.html" class="pagename">Graphic Design</a>
+      </div>
+      <div class="header_right">
+        <div class="line"></div>
+        <p class="year">2021</p>
+      </div>
+    </div>
+    <div class="recycle_top">
+      <div class="recycle_left">
+        <p class="protfolio_title">手機回收網站</p>
+        <p class="main_text">提供使用者線上評估手機二手價，了解市面二手機行情。以簡易的流程直接販售手機，於會員中心可更改資料與查看訂單記錄，
+          並結合後台網站加快業主驗機速率。</p>
+        <p class="protfolio_text">類型：網站設計、響應式設計<br>
+          製作日期：2020.06<br>
+          使用工具：Illustrator、XD、Zeplin</p>
+        <a href="https://www.3c91.com.tw" class="pagelink">
+          <div class="recycle_link_button">
+            <p class="recycle_link_text">點我查看</p>
+            <img class="recycle_link_icon" src="icon/arrow.svg">
+          </div>
+        </a>
+      </div>
+      <div class="recycle_right">
+        <img class="recycle_coverimg" src="img/recycle/cover.png">
+      </div>
+    </div>
+    <div class="overview">
+      <div class="overview_inner">
+        <p class="main_bigtitle">Overview</p>
+        <p class="main_text_center">以簡單的項目分類讓使用者選擇手機現況進行簡易評估，送出訂單同時清楚標示手機狀態及訂單內容，
+          讓業主及客戶在訂單操作和檢測上提升效率，也能夠保障買賣雙方之權益。
+        </p>
+      </div>
+      <div class="points">
+        <div class="point">
+          <div class="point_icon">
+            <img class="point_icon_size" src="icon/chart.png">
+          </div>
+          <p class="point_text">二手手機行情</p>
+        </div>
+        <div class="point">
+          <div class="point_icon">
+            <img class="point_icon_size" src="icon/price.png">
+          </div>
+          <p class="point_text">線上手機估價</p>
+        </div>
+        <div class="point">
+          <div class="point_icon">
+            <img class="point_icon_size" src="icon/record.png">
+          </div>
+          <p class="point_text">會員訂單記錄</p>
+        </div>
+      </div>
+    </div>
+    <div class="features_outside">
+      <p class="main_bigtitle">Features</p>
+      <div class="features_title">
+        <p class="pagename features_subtitle main_text_select" onclick="featuresFunction(0)">首頁</p>
+        <p class="pagename features_subtitle" onclick="featuresFunction(1)">二手手機行情</p>
+        <p class="pagename features_subtitle" onclick="featuresFunction(2)">線上手機估價</p>
+        <p class="pagename features_subtitle" onclick="featuresFunction(3)">線上售出手機</p>
+        <p class="pagename features_subtitle" onclick="featuresFunction(4)">會員中心</p>
+        <p class="pagename features_subtitle" onclick="featuresFunction(5)">訂單記錄</p>
+      </div>
+      <div class="features_centent features_dispaly">
+        <img class="recycle_image" src="img/recycle/recycle_1.jpg">
+      </div>
+      <div class="features_centent">
+        <img class="recycle_image" src="img/recycle/recycle_2.jpg">
+      </div>
+      <div class="features_centent">
+        <img class="recycle_image" src="img/recycle/recycle_3.jpg">
+      </div>
+      <div class="features_centent">
+        <img class="recycle_image" src="img/recycle/recycle_4.jpg">
+      </div>
+      <div class="features_centent">
+        <img class="recycle_image" src="img/recycle/recycle_5.jpg">
+      </div>
+      <div class="features_centent">
+        <img class="recycle_image" src="img/recycle/recycle_6.jpg">
+      </div>
+    </div>
+    <div class="footer">
+      <p class="footer_text">0939-630-417<br>
+        serina3313@gmail.com
+      </p>
+    </div>
+  </div>
+</body>
+<script>
+  const changeImage = document.querySelectorAll('.features_centent')
+  const changeTitle = document.querySelectorAll('.features_subtitle')
+
+  function featuresFunction(val) {
+    const displayDiv = document.querySelectorAll('.features_dispaly')[0].classList
+    const displayTitle = document.querySelectorAll('.main_text_select')[0].classList
+    displayDiv.remove('features_dispaly')
+    displayTitle.remove('main_text_select')
+    changeImage[val].classList.add('features_dispaly')
+    changeTitle[val].classList.add('main_text_select')
+  }
+</script>
+
+</html>

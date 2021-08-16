@@ -1,0 +1,111 @@
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400&family=Rufina:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="all">
+    <div class="header">
+      <div class="header_left">
+        <p class="bigtitle">Portfolio</p>
+        <a href="index.html" class="pagename">About me</a>
+        <a href="UiUxDesign.html" class="pagename pagename2">UI/UX Design</a>
+        <a href="GraphicDesign.html" class="pagename">Graphic Design</a>
+      </div>
+      <div class="header_right">
+        <div class="line"></div>
+        <p class="year">2021</p>
+      </div>
+    </div>
+    <div class="patrol_top">
+      <div class="patrol_left">
+        <p class="protfolio_title">保全巡邏系統APP</p>
+        <p class="main_text">利用手機隨身帶著走的特性，以QR code掃描的方式進行巡邏點簽到，
+          讓保全及執勤人員能更確實地執行勤務，並即時回報事件及查看紀錄。</p>
+        <p class="protfolio_text">類型：APP設計<br>
+          製作日期：2020.09<br>
+          使用工具：Illustrator、XD、Zeplin</p>
+        <div class="patrol_link">
+          <a href="https://apps.apple.com/us/app/悅盛保全行動app/id1543141566" class="pagelink">
+            <img class="patrol_link_icon" src="icon/appstore.png">
+          </a>
+          <a href="https://play.google.com/store/apps/details?id=app.viuto.flutterpatrol&hl=fr_CH" class="pagelink">
+            <img class="patrol_link_icon" src="icon/googleplay.png">
+          </a>
+        </div>
+      </div>
+      <div class="patrol_right">
+        <img class="patrol_coverimg" src="img/patrol/cover.png">
+      </div>
+    </div>
+    <div class="overview">
+      <div class="overview_inner">
+        <p class="main_bigtitle">Overview</p>
+        <p class="main_text_center">
+          利用掃描巡邏地點的QR code進行巡邏點簽到，解決使用紙本簽到的弊端，讓工作人員能夠確實執行業務，也能透過App即時查看任務和回報，增加工作效率。
+        </p>
+        <p class="main_text_center">主視覺配合公司Logo黃色搭配灰色及白色來進行設計，並加大字體讓年紀較長的使用者也能輕鬆閱讀。</p>
+      </div>
+      <div class="patrol_colors">
+        <div class="partol_yellow"></div>
+        <div class="partol_gray"></div>
+        <div class="partol_white"></div>
+      </div>
+    </div>
+    <div class="features_outside">
+      <p class="main_bigtitle">Features</p>
+      <div class="features_title">
+        <p class="pagename features_subtitle main_text_select" onclick="featuresFunction(0)">社區巡邏/資產盤點</p>
+        <p class="pagename features_subtitle" onclick="featuresFunction(1)">個人排班表</p>
+        <p class="pagename features_subtitle" onclick="featuresFunction(2)">稽核人員訪查</p>
+        <p class="pagename features_subtitle" onclick="featuresFunction(3)">執勤管理</p>
+        <p class="pagename features_subtitle" onclick="featuresFunction(4)">事件紀錄</p>
+      </div>
+      <div class="features_centent features_dispaly">
+        <img class="patrol_image" src="img/patrol/patrol_1.png">
+        <p class="main_text_patrol">列出巡邏路線/資產狀態，點擊項目進入掃描巡邏點QR code、拍攝照片與填寫回報敘述，完成全部巡點送出完成巡邏。</p>
+      </div>
+      <div class="features_centent">
+        <img class="patrol_image" src="img/patrol/patrol_2.png">
+        <p class="main_text_patrol">顯示個人在各個社區之班表時間及內容，並可以預選次月休假日期。</p>
+      </div>
+      <div class="features_centent">
+        <img class="patrol_image" src="img/patrol/patrol_3.png">
+        <p class="main_text_patrol">稽核人員時掃描被稽核人員QR code、拍照及填寫評分表，最後由被稽核人員簽名確認該次稽核內容。</p>
+      </div>
+      <div class="features_centent">
+        <img class="patrol_image" src="img/patrol/patrol_4.png">
+        <p class="main_text_patrol">顯示執勤人員的任務清單，除了即時回報處理狀態也可新增勤務項目。</p>
+      </div>
+      <div class="features_centent">
+        <img class="patrol_image2" src="img/patrol/patrol_5.png">
+        <p class="main_text_patrol">列出所有的待辦事項及工作記錄以便查詢並可新增紀錄。</p>
+      </div>
+    </div>
+    <div class="footer">
+      <p class="footer_text">0939-630-417<br>
+        serina3313@gmail.com
+      </p>
+    </div>
+  </div>
+</body>
+<script>
+  const changeImage = document.querySelectorAll('.features_centent')
+  const changeTitle = document.querySelectorAll('.features_subtitle')
+
+  function featuresFunction(val) {
+    const displayDiv = document.querySelectorAll('.features_dispaly')[0].classList
+    const displayTitle = document.querySelectorAll('.main_text_select')[0].classList
+    displayDiv.remove('features_dispaly')
+    displayTitle.remove('main_text_select')
+    changeImage[val].classList.add('features_dispaly')
+    changeTitle[val].classList.add('main_text_select')
+  }
+</script>
+
+</html>

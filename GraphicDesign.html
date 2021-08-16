@@ -1,0 +1,78 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400&family=Rufina:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="all">
+    <div class="header">
+      <div class="header_left">
+        <p class="bigtitle">Portfolio</p>
+        <a href="index.html" class="pagename">About me</a>
+        <a href="UiUxDesign.html" class="pagename">UI/UX Design</a>
+        <a href="GraphicDesign.html" class="pagename pagename2">Graphic Design</a>
+      </div>
+      <div class="header_right">
+        <div class="line"></div>
+        <p class="year">2021</p>
+      </div>
+    </div>
+    <div class="graphic">
+      <p class="main_bigtitle2">Graphic Design</p>
+      <div class="graphic_inner">
+        <img class="graphic_card" onclick="openImage(this, 0)" src="img/graphic/datong.png">
+        <img class="graphic_card" onclick="openImage(this, 1)" src="img/graphic/carry.png">
+        <div class="graphic_card2"></div>
+      </div>
+    </div>
+    <div class="footer">
+      <p class="footer_text">0939-630-417<br>
+        serina3313@gmail.com
+      </p>
+    </div>
+  </div>
+  <div class="popup">
+    <div class="popup_background">
+      <img class="popup_closeicon" src="icon/close.png" onclick="closeFunction()">
+      <div class="popup_inner">
+        <img class="popupInnerImage" id="popupImage" src="">
+        <div class="popupInnerText">
+          <div id="popup_title"></div>
+          <div id="popup_text"></div>
+          <div class="popup_type">
+            <div id="popup_TypeText"></div>
+            <img id="popup_TypeImg" src=""/>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script>
+function closeFunction () {
+  const popupDiv = document.querySelectorAll('.popup')[0]
+  popupDiv.style.display = 'none'
+}
+
+function openImage (val, index) {
+  const popupDiv = document.querySelectorAll('.popup')[0]
+  popupDiv.style.display = 'flex'
+  document.querySelectorAll('#popupImage')[0].src = val.src
+  if (index == 0) {
+    document.querySelectorAll('#popup_title')[0].innerHTML = '大統環保有限公司'
+    document.querySelectorAll('#popup_text')[0].innerHTML = '該企業主要業務為廢水污染防治規劃及環保署相關業務協助申辦，以環保為概念延伸出水將山環抱的意象，營造出水與自然息息相關的感覺。'
+    document.querySelectorAll('#popup_TypeText')[0].innerHTML = '類型：Logo設計<br/>製作日期：2021.03 '
+    document.querySelectorAll('#popup_TypeImg')[0].src = 'img/graphic/datong_color.png'
+  } else if (index == 1) {
+    document.querySelectorAll('#popup_title')[0].innerHTML = '凱瑞投資股份有限公司'
+    document.querySelectorAll('#popup_text')[0].innerHTML = '由於業主為第二代創業，以傳承作為發想圓型環繞的圖形變化展現出環抱的意象，漸變大小的圓圈表示各個世代的傳遞，表達出家庭的傳承及團結的形象。'
+    document.querySelectorAll('#popup_TypeText')[0].innerHTML = '類型：Logo設計<br/>製作日期：2021.07 '
+    document.querySelectorAll('#popup_TypeImg')[0].src = 'img/graphic/carry_color.png'
+  }
+}
+</script>
+</html>
