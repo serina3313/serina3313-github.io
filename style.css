@@ -68,7 +68,8 @@ body {
 
 /* index */
 .info {
-  width: 1350px;
+  max-width: 1350px;
+  width: 100%;
   padding: 120px 0;
   margin: auto;
   display: flex;
@@ -77,7 +78,7 @@ body {
 }
 
 .info_left {
-  width: 36%;
+  width: 37%;
   padding: 0 80px 27px 0;
 }
 
@@ -147,6 +148,7 @@ body {
 }
 
 .info_right {
+  width: 325px;
 }
 
 .me {
@@ -460,8 +462,9 @@ body {
 }
 
 .patrol_left {
-  width: 450px;
-  padding-right: 10%;
+  width: 385px;
+  padding-right: 8%;
+  padding-top: 15px;
 }
 
 .protfolio_title {
