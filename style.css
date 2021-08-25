@@ -78,7 +78,7 @@ body {
 }
 
 .info_left {
-  width: 37%;
+  width: 38%;
   padding: 0 80px 27px 0;
 }
 
@@ -462,7 +462,7 @@ body {
 }
 
 .patrol_left {
-  width: 385px;
+  width: 450px;
   padding-right: 8%;
   padding-top: 15px;
 }
@@ -486,7 +486,7 @@ body {
 }
 
 .patrol_right {
-  width: 421px;
+  width: 385px;
 }
 
 .patrol_link_icon {
