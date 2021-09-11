@@ -4,7 +4,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <title>Serina's Portfolio</title>
   <meta name="description" content="我是怡珊，擅長UI/UX設計、CIS視覺設計、產品設計，自學HTML、CSS、網頁RWD、UI/UX設計。喜歡學習跨領域技能並嘗試新事物，
-  隨時關注新消息了解使用者體驗之方向，善於溝通團隊合作，且對設計的細節有所堅持。">
+  隨時關注新消息了解使用者體驗之方向，善於溝通團隊合作且對設計的細節有所堅持。">
   <meta property="og:image" content="img/index_cover.png">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400&family=Rufina:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -29,8 +29,7 @@
     <div class="patrol_top">
       <div class="patrol_left">
         <p class="protfolio_title">保全巡邏系統APP</p>
-        <p class="main_text">利用手機隨身帶著走的特性，以QR code掃描的方式進行巡邏點簽到，
-          讓保全及執勤人員能更確實地執行勤務，並即時回報事件及查看紀錄。</p>
+        <p class="main_text">利用手機隨身帶著走的特性，以QR code掃描的方式進行巡邏點簽到，讓保全及執勤人員能更確實地執行勤務，並即時回報事件及查看紀錄。</p>
         <p class="protfolio_text">類型：APP設計<br>
           製作日期：2020.09<br>
           使用工具：Illustrator、XD、Zeplin</p>
@@ -50,15 +49,92 @@
     <div class="overview">
       <div class="overview_inner">
         <p class="main_bigtitle">Overview</p>
-        <p class="main_text_center">
-          利用掃描巡邏地點的QR code進行巡邏點簽到，解決使用紙本簽到的弊端，讓工作人員能夠確實執行業務，也能透過App即時查看任務和回報，增加工作效率。
-        </p>
-        <p class="main_text_center">主視覺配合公司Logo黃色搭配灰色及白色來進行設計，並加大字體讓年紀較長的使用者也能輕鬆閱讀。</p>
+        <p class="main_text">
+        此專案為APP改版重新開發，舊有APP採用掃描QR code的方式進行巡邏點簽到，但因為QR code固定的關係，能夠單純影印QR code在位置上掃描造成巡邏效率不佳。為了解決此問題與員工查看工作項目更方便為目的，重新設計新版APP，
+        讓工作人員能夠確實執行業務，也能透過App即時查看任務和回報增加工作效率。</p>
       </div>
-      <div class="patrol_colors">
-        <div class="partol_yellow"></div>
-        <div class="partol_gray"></div>
-        <div class="partol_white"></div>
+    </div>
+    <div class="problem">
+      <div class="problem_title">
+        <p class="main_bigtitle_right">
+          Problem
+        </p>
+      </div>
+      <div class="problem_inner">
+          <div class="problem_line">
+            <p class="main_title_problem">01.</p>
+            <p class="main_text_problem">以單純掃描QRcode的方式，保全巡邏不夠確實</p>
+          </div>
+          <div class="problem_line">
+            <p class="main_title_problem">02.</p>
+            <p class="main_text_problem">巡邏途中可能沒有網路</p>
+          </div>
+          <div class="problem_line2">
+            <p class="main_title_problem">03.</p>
+            <p class="main_text_problem">內勤人員無法即時查看工作項目</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="solution">
+      <p class="main_bigtitle">Solution</p>
+      <div class="solution_inner">
+        <div class="solution_line">
+          <div class="solution_icon">
+            <img class="solution_icon_size" src="icon/camera.png">
+          </div>
+          <p class="main_text">在簽到流程中增加拍攝現場照片及現場狀況紀錄</p>
+        </div>
+        <div class="solution_line">
+          <div class="solution_icon">
+            <img class="solution_icon_size" src="icon/upload.png">
+          </div>
+          <p class="main_text">巡邏完成後，一鍵上傳該路線所有巡邏資料</p>
+        </div>
+        <div class="solution_line2">
+          <div class="solution_icon">
+              <img class="solution_icon_size" src="icon/list-unordered.png">
+            </div>
+          <p class="main_text">將後台內容導入顯示執勤項目及待辦事項</p>
+        </div>
+      </div>
+    </div>
+    <div class="userflow">
+      <p class="main_bigtitle">User Flow</p>
+      <img class="userflow_img" src="img/patrol/patrol_userflow.png">
+    </div>
+    <div class="styleguide">
+      <div class="main_bigtitle">Style Guide</div>
+      <div class="styleguide_inner">
+        <p class="styleguide_title">Colors</p>
+        <div class="styleguide_colors">
+          <div class="styleguide_line">
+            <div class="partol_yellow"></div>
+            <p class="main_text">#FCD72F</p>
+          </div>
+          <div class="styleguide_line">
+            <div class="partol_gray"></div>
+            <p class="main_text">#F5F5F5</p>
+          </div>
+          <div class="styleguide_line2">
+            <div class="partol_white"></div>
+            <p class="main_text">#FFFFFF</p>
+          </div>
+        </div>
+        <p class="styleguide_title">Typography</p>
+        <div class="styleguide_typography">
+          <p class="font">PingFang TC</p>
+          <p class="fontweight_bold">Bold</p>
+          <p class="main_text">20pt</p>
+          <p class="font">蘋方體-繁</p>
+          <p class="fontweight_medium">Ｍedium</p>
+          <p class="main_text">16pt、18pt</p>
+          <p class="font"></p>
+          <p class="fontweight_regular">Regular</p>
+          <p class="main_text">16pt、18pt</p>
+        </div>
+        <p class="styleguide_title">Concept</p>
+        <p class="main_text">主視覺配合公司Logo黃色搭配灰色及白色來進行設計，並加大字體讓年紀較長的使用者也能輕鬆閱讀。</p>
       </div>
     </div>
     <div class="features_outside">
